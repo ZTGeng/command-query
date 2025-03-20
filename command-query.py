@@ -133,6 +133,8 @@ Requirements:
     if copy_to_clipboard(command):
         if os_type == 'windows':
             print(f"命令已复制到剪贴板，按 Ctrl+V 执行：\n{command}")
+        elif os_type == 'macos':
+            print(f"命令已复制到剪贴板，按 Command(⌘)+V 执行：\n{command}")
         else:
             print(f"命令已复制到剪贴板，按 Ctrl+Shift+V 执行：\n{command}")
     else:
