@@ -53,7 +53,7 @@ def copy_to_clipboard(command):
             subprocess.run(
                 'clip',
                 shell=True,
-                input=command.encode('utf-8'),
+                input=command.encode('utf-16-le'),
                 check=True
             )
         elif os_type == 'macos':
