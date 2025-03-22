@@ -11,6 +11,8 @@ def detect_windows_shell():
             name = parent.name().lower()
             if 'powershell' in name:
                 return 'PowerShell'
+            elif 'pwsh' in name:
+                return 'PowerShell 7'
             elif 'cmd' in name:
                 return 'cmd'
             elif 'bash' in name:  # 兼容WSL

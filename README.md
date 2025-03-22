@@ -44,7 +44,7 @@ alias q='python /path_to_repo/command-query.py key=OPENAI_API_KEY'
 ```cmd
 doskey q=python C:\path_to_repo\command-query.py key=OPENAI_API_KEY $*
 ```
-**PowerShell**：可以定义一个函数来作为别名。在 PowerShell 配置文件（通常是 profile.ps1）中添加：
+**PowerShell**：可以定义一个函数来作为别名。在 PowerShell 配置文件（通常是 `profile.ps1`，路径可通过运行 `$PROFILE` 命令查看，若文件不存在请手动创建对应目录和文件）中添加：
 ```powershell
 function q {
     python C:\path_to_repo\command-query.py key=OPENAI_API_KEY @args
